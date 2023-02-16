@@ -1,1 +1,10 @@
-<h1> Hello World </h1>
+<h1> Places </h1>
+
+<div class="row">
+  <% for place in @places %>
+    <div class="col-3">
+      <h4><%= place["title"] %></h4>
+      <!-- <p><%= place["description"] %></p> -->
+    </div>
+  <% end %>
+</div>
