@@ -15,7 +15,7 @@ sun_valley.save
 hockey_game = Post.new
 hockey_game["title"] = "hockey game"
 hockey_game["description"] = "scored a goal"
-hockey_game["posted_on"] = 
+hockey_game["posted_on"] = "01/04/1993"
 hockey_game["place_id"] = sun_valley["id"]
 hockey_game.save
 
