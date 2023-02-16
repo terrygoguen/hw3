@@ -1,14 +1,10 @@
 <h1>New Place</h1>
 <%= form_with :model => @place do |form| %>
   <p>
-    <%= form.label "image", "Image URL"%>
-    <%= form.text_field "image" %>
-  </p>
-  <p>
-    <%= form.label "body" %>
-    <%= form.text_field "body" %>
-    <%= form.label "author" %>
-    <%= form.text_field "author" %>
+    <%= form.label "name of place" %>
+    <%= form.text_field "name of place" %>
+    <%= form.label "first arrived" %>
+    <%= form.date_field "first arrived" %>
   </p>
   <%= form.submit %>
 <% end %>
