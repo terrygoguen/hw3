@@ -1,11 +1,11 @@
-<h1><%= @place["name"] %></h1>
+<!-- <h1><%= @place["name"] %></h1> --> 
 
 <p>
     <a href="/places">Back to all places</a>
 </p> 
 
 <ul>    
-    <% posts = Posts.where({"place_id" => @place["id"]}) %>
+    <% posts = Post.where({"place_id" => @place["id"]}) %>
     <% for post in posts %>
         <li>
             <%= post["title"] %>
